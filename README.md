@@ -65,7 +65,8 @@ In the first step of the assignment, I implemented various different numerical s
 
 Projectiles - Integrators Simulation|
 :-------------------------:|
-https://github.com/eavraam/Physics-Simulations/assets/86787105/602b1b28-006a-443e-a814-d3053a3673ec|
+
+https://github.com/eavraam/Physics-Simulations/assets/86787105/602b1b28-006a-443e-a814-d3053a3673ec
 
 
 ## <a name="collisions">💥 Collisions</a>
@@ -125,7 +126,14 @@ to make it static.
 
 Cloth Simulation|
 :-------------------------:|
-https://github.com/eavraam/Physics-Simulations/assets/86787105/4ca873b5-6164-4f1b-a6a6-3e756dd126ed|
+
+https://github.com/eavraam/Physics-Simulations/assets/86787105/4ca873b5-6164-4f1b-a6a6-3e756dd126ed
 
 
 ## <a name="fluid">🌊 Fluid Simulation</a>
+
+👷 🔨 **This area is under construction** 🔨 👷
+*Some preliminary work can be found on the fluid simulation, but it's not there yet.*
+
+The goal of the current exercise is to implement `Smooth Particle Hydrodynamics (SPH)` for fluid simulation.
+
