@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Computer Animation: Physical Simulations</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QGroupBox" name="controlsSim">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Simulation controls</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="3" column="1">
+          <widget class="QDoubleSpinBox" name="timestep">
+           <property name="decimals">
+            <number>6</number>
+           </property>
+           <property name="maximum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.010000000000000</double>
+           </property>
+           <property name="value">
+            <double>0.050000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="btnSimloop">
+           <property name="text">
+            <string>Simulate!</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Time step:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="btnReset">
+           <property name="text">
+            <string>Restart</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="btnSimstep">
+           <property name="text">
+            <string>1 step</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="btnPause">
+           <property name="text">
+            <string>Pause</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="blackHole">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Black Hole</string>
+        </property>
+        <widget class="QCheckBox" name="blackHoleToggle">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>181</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Enable / Disable</string>
+         </property>
+         <property name="tristate">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="dragForces">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Drag Forces</string>
+        </property>
+        <widget class="QRadioButton" name="drag_none">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>181</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>None (only gravity)</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="drag_linear">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>181</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Linear (+ gravity)</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="drag_quadratic">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>70</y>
+           <width>181</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Quadratic (+ gravity)</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="collisionParameters">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Collision Parameters</string>
+        </property>
+        <widget class="QLabel" name="elasticity">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>71</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Elasticity:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="friction">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>70</y>
+           <width>61</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Friction:</string>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="kElastic">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>25</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="decimals">
+          <number>4</number>
+         </property>
+         <property name="maximum">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.010000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.300000000000000</double>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="kFriction">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>65</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="decimals">
+          <number>4</number>
+         </property>
+         <property name="minimum">
+          <double>0.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.010000000000000</double>
+         </property>
+         <property name="value">
+          <double>0.700000000000000</double>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="controlsScene">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string>Scene settings</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>No scene loaded</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="GLWidget" name="openGLWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuScene">
+    <property name="title">
+     <string>Scene</string>
+    </property>
+    <addaction name="actionSceneProjectiles"/>
+    <addaction name="actionSceneFountain"/>
+    <addaction name="actionSceneCloth"/>
+    <addaction name="actionSceneFluid"/>
+   </widget>
+   <widget class="QMenu" name="menuCamera">
+    <property name="title">
+     <string>Camera</string>
+    </property>
+    <addaction name="actionCameraReset"/>
+    <addaction name="actionCameraX"/>
+    <addaction name="actionCameraY"/>
+    <addaction name="actionCameraZ"/>
+   </widget>
+   <addaction name="menuScene"/>
+   <addaction name="menuCamera"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSceneFountain">
+   <property name="text">
+    <string>Fountain</string>
+   </property>
+  </action>
+  <action name="actionCameraReset">
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionSceneProjectiles">
+   <property name="text">
+    <string>Projectiles</string>
+   </property>
+  </action>
+  <action name="actionCameraX">
+   <property name="text">
+    <string>Align +X</string>
+   </property>
+  </action>
+  <action name="actionCameraY">
+   <property name="text">
+    <string>Align +Y</string>
+   </property>
+  </action>
+  <action name="actionCameraZ">
+   <property name="text">
+    <string>Align +Z</string>
+   </property>
+  </action>
+  <action name="actionSnowball">
+   <property name="text">
+    <string>Snowball</string>
+   </property>
+  </action>
+  <action name="actionSnowball_2">
+   <property name="text">
+    <string>Snowball</string>
+   </property>
+  </action>
+  <action name="actionSceneCloth">
+   <property name="text">
+    <string>Cloth</string>
+   </property>
+  </action>
+  <action name="actionSceneFluid">
+   <property name="text">
+    <string>Fluid</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>code/glwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
