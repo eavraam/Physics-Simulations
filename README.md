@@ -65,7 +65,7 @@ In the first step of the assignment, I implemented various different numerical s
 
 Projectiles - Integrators Simulation|
 :-------------------------:|
-![](repo_images/sim_projectiles.webm)|
+![](repo_images/sim_projectiles.mp4)|
 
 
 ## <a name="collisions">💥 Collisions</a>
@@ -92,7 +92,7 @@ To play around with the application, you could use the following key combination
 
 Collisions - Fountain Simulation|
 :-------------------------:|
-![](repo_images/sim_fountain.webm)|
+![](repo_images/sim_fountain.mp4)|
 
 
 ## <a name="cloth">👗 Cloth Simulation</a>
@@ -122,7 +122,7 @@ to make it static.
 
 Cloth Simulation|
 :-------------------------:|
-![](repo_images/sim_cloth.webm)|
+![](repo_images/sim_cloth.mp4)|
 
 
 
