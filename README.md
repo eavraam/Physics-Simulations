@@ -92,7 +92,8 @@ To play around with the application, you could use the following key combination
 
 Collisions - Fountain Simulation|
 :-------------------------:|
-https://github.com/eavraam/Physics-Simulations/assets/86787105/fdff3f2f-c888-468f-b4a2-840e8e70c064|
+
+https://github.com/eavraam/Physics-Simulations/assets/86787105/fdff3f2f-c888-468f-b4a2-840e8e70c064
 
 
 
