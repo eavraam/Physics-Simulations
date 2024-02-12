@@ -65,7 +65,7 @@ In the first step of the assignment, I implemented various different numerical s
 
 Projectiles - Integrators Simulation|
 :-------------------------:|
-![](repo_images/sim_projectiles.mp4)|
+https://github.com/eavraam/Physics-Simulations/assets/86787105/602b1b28-006a-443e-a814-d3053a3673ec|
 
 
 ## <a name="collisions">💥 Collisions</a>
@@ -92,7 +92,9 @@ To play around with the application, you could use the following key combination
 
 Collisions - Fountain Simulation|
 :-------------------------:|
-![](repo_images/sim_fountain.mp4)|
+https://github.com/eavraam/Physics-Simulations/assets/86787105/fdff3f2f-c888-468f-b4a2-840e8e70c064|
+
+
 
 
 ## <a name="cloth">👗 Cloth Simulation</a>
@@ -122,8 +124,7 @@ to make it static.
 
 Cloth Simulation|
 :-------------------------:|
-![](repo_images/sim_cloth.mp4)|
-
+https://github.com/eavraam/Physics-Simulations/assets/86787105/4ca873b5-6164-4f1b-a6a6-3e756dd126ed|
 
 
 ## <a name="fluid">🌊 Fluid Simulation</a>
