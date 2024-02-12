@@ -133,7 +133,15 @@ https://github.com/eavraam/Physics-Simulations/assets/86787105/4ca873b5-6164-4f1
 ## <a name="fluid">🌊 Fluid Simulation</a>
 
 👷 🔨 **This area is under construction** 🔨 👷
+
 *Some preliminary work can be found on the fluid simulation, but it's not there yet.*
 
 The goal of the current exercise is to implement `Smooth Particle Hydrodynamics (SPH)` for fluid simulation.
+
+Fluid Simulation|
+:-------------------------:|
+
+https://github.com/eavraam/Physics-Simulations/assets/86787105/ccc56518-e8f4-41ee-b185-1739e4267f71
+
+
 
